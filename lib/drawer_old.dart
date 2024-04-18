@@ -1,17 +1,15 @@
 import 'package:dash_board/generated/assets.dart';
 import 'package:dash_board/style.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-
-class DrawerRight extends StatelessWidget {
-  const DrawerRight({super.key});
+class DrawerOld extends StatelessWidget {
+  const DrawerOld({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Drawer(
       width: MediaQuery.of(context).size.width * 0.2,
-       surfaceTintColor: Colors.white,
+      surfaceTintColor: Colors.white,
       child: Padding(
         padding: const EdgeInsets.all(20),
         child: Column(
@@ -61,7 +59,7 @@ class DrawerRight extends StatelessWidget {
                 color: Colors.blue,
               ),
               title: 'Statics',
-              image: Assets.imagesGraph,
+              image: Assets.statics,
             ),
             const SizedBox(
               height: 30,
@@ -72,7 +70,7 @@ class DrawerRight extends StatelessWidget {
                 fontWeight: FontWeight.w400,
               ),
               title: 'My Investment',
-              image: Assets.imagesConvertCard,
+              image: Assets.transaction,
             ),
             const SizedBox(
               height: 30,
