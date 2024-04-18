@@ -18,7 +18,7 @@ class DesktopLayout extends StatelessWidget {
               child: DrawerNew(),
             ),
             Expanded(
-              flex: 2,
+              flex: 3,
               child: Body(),
             ),
             Expanded(

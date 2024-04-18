@@ -41,19 +41,16 @@ class _DrawerNewState extends State<DrawerNew> {
             ),
           ),
           SliverList.builder(
-            itemBuilder: (context, index) => Padding(
-              padding: const EdgeInsets.only(left: 10.0),
-              child: GestureDetector(
-                onTap: () {
-                  setState(() {
-                    selectedIndex = index;
-                  });
-                },
-                child: RowInfo(
-                  title: info[index].title,
-                  image: info[index].image,
-                  isSelected: selectedIndex == index,
-                ),
+            itemBuilder: (context, index) => GestureDetector(
+              onTap: () {
+                setState(() {
+                  selectedIndex = index;
+                });
+              },
+              child: RowInfo(
+                title: info[index].title,
+                image: info[index].image,
+                isSelected: selectedIndex == index,
               ),
             ),
             itemCount: info.length,
@@ -63,7 +60,7 @@ class _DrawerNewState extends State<DrawerNew> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Spacer(),
+                Spacer(),//or use Expanded(child:SizeBox) like this you give max space
                 RowInfo(title: 'Setting system', image: Assets.imagesSetting2),
                 RowInfo(
                   title: 'Logout account',
