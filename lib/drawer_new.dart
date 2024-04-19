@@ -118,7 +118,7 @@ class ProfileInfo extends StatelessWidget {
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
     return Container(
-      padding: const EdgeInsets.all(12),
+
       decoration: ShapeDecoration(
         color: const Color(0xFFFAFAFA),
         shape: RoundedRectangleBorder(

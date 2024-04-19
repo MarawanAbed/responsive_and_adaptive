@@ -43,102 +43,100 @@ class _ExpensesNewState extends State<ExpensesNew> {
         color: Colors.white,
         borderRadius: BorderRadius.circular(15),
       ),
-      child: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              children: [
-                Text(
-                  'All Expenses',
-                  style: kTextStyle20SemiBold(context),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Text(
+                'All Expenses',
+                style: kTextStyle20SemiBold(context),
+              ),
+              const Spacer(),
+              Container(
+                padding: const EdgeInsets.all(10),
+                decoration: ShapeDecoration(
+                  color: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    side:
+                        const BorderSide(width: 1, color: Color(0xFFF1F1F1)),
+                    borderRadius: BorderRadius.circular(12),
+                  ),
                 ),
-                const Spacer(),
-                Container(
-                  padding: const EdgeInsets.all(10),
-                  decoration: ShapeDecoration(
-                    color: Colors.white,
-                    shape: RoundedRectangleBorder(
-                      side:
-                          const BorderSide(width: 1, color: Color(0xFFF1F1F1)),
-                      borderRadius: BorderRadius.circular(12),
+                child: Row(
+                  children: [
+                    Text(
+                      'Monthly',
+                      style: kTextStyle16Medium(context),
                     ),
-                  ),
-                  child: Row(
-                    children: [
-                      Text(
-                        'Monthly',
-                        style: kTextStyle16Medium(context),
-                      ),
-                      const Icon(Icons.arrow_drop_down),
-                    ],
-                  ),
+                    const Icon(Icons.arrow_drop_down),
+                  ],
                 ),
-              ],
-            ),
-            const SizedBox(
-              height: 15,
-            ),
-            Row(
-              children: [
-                Expanded(
-                  child: GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        selectedIndex = 0;
-                      });
-                    },
-                    child: ExpensesItem(
-                      title: models[0].title,
-                      date: models[0].date,
-                      amount: models[0].amount,
-                      logo: models[0].logo,
-                      isSelected: selectedIndex == 0,
-                    ),
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 15,
+          ),
+          Row(
+            children: [
+              Expanded(
+                child: GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      selectedIndex = 0;
+                    });
+                  },
+                  child: ExpensesItem(
+                    title: models[0].title,
+                    date: models[0].date,
+                    amount: models[0].amount,
+                    logo: models[0].logo,
+                    isSelected: selectedIndex == 0,
                   ),
                 ),
-                const SizedBox(
-                  width: 15,
-                ),
-                Expanded(
-                  child: GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        selectedIndex = 1;
-                      });
-                    },
-                    child: ExpensesItem(
-                      title: models[1].title,
-                      date: models[1].date,
-                      amount: models[1].amount,
-                      logo: models[1].logo,
-                      isSelected: selectedIndex == 1,
-                    ),
+              ),
+              const SizedBox(
+                width: 15,
+              ),
+              Expanded(
+                child: GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      selectedIndex = 1;
+                    });
+                  },
+                  child: ExpensesItem(
+                    title: models[1].title,
+                    date: models[1].date,
+                    amount: models[1].amount,
+                    logo: models[1].logo,
+                    isSelected: selectedIndex == 1,
                   ),
                 ),
-                const SizedBox(
-                  width: 15,
-                ),
-                Expanded(
-                  child: GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        selectedIndex = 2;
-                      });
-                    },
-                    child: ExpensesItem(
-                      title: models[2].title,
-                      date: models[2].date,
-                      amount: models[2].amount,
-                      logo: models[2].logo,
-                      isSelected: selectedIndex == 2,
-                    ),
+              ),
+              const SizedBox(
+                width: 15,
+              ),
+              Expanded(
+                child: GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      selectedIndex = 2;
+                    });
+                  },
+                  child: ExpensesItem(
+                    title: models[2].title,
+                    date: models[2].date,
+                    amount: models[2].amount,
+                    logo: models[2].logo,
+                    isSelected: selectedIndex == 2,
                   ),
                 ),
-              ],
-            ),
-          ],
-        ),
+              ),
+            ],
+          ),
+        ],
       ),
     );
   }
