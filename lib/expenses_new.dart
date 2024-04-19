@@ -23,13 +23,13 @@ class _ExpensesNewState extends State<ExpensesNew> {
       title: 'Income',
       date: 'April 2023',
       amount: '2,500.00',
-      logo: Assets.imagesCategory2,
+      logo: Assets.category,
     ),
     ExpensesModel(
       title: 'Expenses',
       date: 'April 2022',
       amount: '2,500.00',
-      logo: Assets.transaction,
+      logo: Assets.convertCard,
     ),
   ];
 

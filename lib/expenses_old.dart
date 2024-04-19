@@ -73,7 +73,7 @@ class ExpensesItems extends StatelessWidget {
                 radius: 30,
                 backgroundColor: Colors.lightBlue,
                 child: SvgPicture.asset(
-                  Assets.transaction,
+                  Assets.convertCard,
                   color: Colors.white,
                 ),
               ),

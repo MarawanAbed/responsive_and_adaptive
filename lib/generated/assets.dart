@@ -2,12 +2,13 @@
 class Assets {
   Assets._();
 
-  static const String imagesCategory2 = 'assets/images/category-2.svg';
-  static const String imagesChart2 = 'assets/images/chart-2.svg';
-  static const String transaction = 'assets/images/convert-card.svg';
-  static const String statics = 'assets/images/graph.svg';
+  static const String category = 'assets/images/category-2.svg';
+  static const String chart = 'assets/images/chart-2.svg';
+  static const String convertCard = 'assets/images/convert-card.svg';
+  static const String graph = 'assets/images/graph.svg';
   static const String imagesLogo = 'assets/images/logo.svg';
   static const String imagesLogout = 'assets/images/logout.svg';
+  static const String imagesMask = 'assets/images/Mask group.png';
   static const String imagesSetting2 = 'assets/images/setting-2.svg';
   static const String imagesWallet2 = 'assets/images/wallet-2.svg';
 

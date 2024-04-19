@@ -283,7 +283,7 @@ class MyCard extends StatelessWidget {
               ),
               const Spacer(),
               SvgPicture.asset(
-                Assets.transaction,
+                Assets.convertCard,
                 color: Colors.white,
               )
             ],

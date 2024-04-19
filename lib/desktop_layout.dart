@@ -1,6 +1,6 @@
 import 'package:dash_board/body.dart';
 import 'package:dash_board/drawer_new.dart';
-import 'package:dash_board/left.dart';
+import 'package:dash_board/left_new.dart';
 import 'package:flutter/material.dart';
 
 class DesktopLayout extends StatelessWidget {
@@ -18,12 +18,12 @@ class DesktopLayout extends StatelessWidget {
               child: DrawerNew(),
             ),
             Expanded(
-              flex: 3,
+              flex: 2,
               child: Body(),
             ),
             Expanded(
               flex: 1,
-              child: Left(),
+              child: LeftNew(),
             ),
           ],
         ),

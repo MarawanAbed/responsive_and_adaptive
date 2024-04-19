@@ -14,11 +14,11 @@ class DrawerNew extends StatefulWidget {
 
 class _DrawerNewState extends State<DrawerNew> {
   final List<RowInfoModel> info = [
-    RowInfoModel(title: 'Dashboard', image: Assets.imagesCategory2),
-    RowInfoModel(title: 'My Transactions', image: Assets.transaction),
-    RowInfoModel(title: 'Statistics', image: Assets.statics),
+    RowInfoModel(title: 'Dashboard', image: Assets.category),
+    RowInfoModel(title: 'My Transactions', image: Assets.convertCard),
+    RowInfoModel(title: 'Statistics', image: Assets.graph),
     RowInfoModel(title: 'Wallet Account', image: Assets.imagesWallet2),
-    RowInfoModel(title: 'My Investments', image: Assets.imagesChart2),
+    RowInfoModel(title: 'My Investments', image: Assets.chart),
   ];
 
   int selectedIndex = 0;

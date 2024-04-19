@@ -38,7 +38,7 @@ class DrawerOld extends StatelessWidget {
                 color: Colors.blue,
               ),
               title: 'Dashboard',
-              image: Assets.imagesCategory2,
+              image: Assets.category,
             ),
             const SizedBox(
               height: 30,
@@ -49,7 +49,7 @@ class DrawerOld extends StatelessWidget {
                 fontWeight: FontWeight.w400,
               ),
               title: 'My Transactions',
-              image: Assets.imagesChart2,
+              image: Assets.chart,
             ),
             const SizedBox(
               height: 30,
@@ -59,7 +59,7 @@ class DrawerOld extends StatelessWidget {
                 color: Colors.blue,
               ),
               title: 'Statics',
-              image: Assets.statics,
+              image: Assets.graph,
             ),
             const SizedBox(
               height: 30,
@@ -70,7 +70,7 @@ class DrawerOld extends StatelessWidget {
                 fontWeight: FontWeight.w400,
               ),
               title: 'My Investment',
-              image: Assets.transaction,
+              image: Assets.convertCard,
             ),
             const SizedBox(
               height: 30,

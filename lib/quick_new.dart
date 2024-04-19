@@ -1,8 +1,6 @@
 import 'package:dash_board/drawer_new.dart';
 import 'package:dash_board/style.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class QuickInvoNew extends StatelessWidget {
   const QuickInvoNew({super.key});
@@ -59,7 +57,7 @@ class QuickInvoNew extends StatelessWidget {
                     itemCount: 3,
                     padding: EdgeInsets.zero,
                     itemBuilder: (context, index) =>
-                    const IntrinsicWidth(child: ProfileInfo()),
+                        const IntrinsicWidth(child: ProfileInfo()),
                   ),
                 ),
                 const SizedBox(
@@ -78,7 +76,7 @@ class QuickInvoNew extends StatelessWidget {
                     ),
                     Expanded(
                       child: InfoItems(
-                        title:"Customer Email",
+                        title: "Customer Email",
                         hint: "Enter Customer Email",
                       ),
                     ),
@@ -100,7 +98,7 @@ class QuickInvoNew extends StatelessWidget {
                     ),
                     Expanded(
                       child: InfoItems(
-                        title:"USD",
+                        title: "USD",
                         hint: "USD",
                       ),
                     ),
@@ -147,7 +145,6 @@ class QuickInvoNew extends StatelessWidget {
                     ),
                   ],
                 ),
-            
               ],
             ),
           )
@@ -159,11 +156,14 @@ class QuickInvoNew extends StatelessWidget {
 
 class InfoItems extends StatelessWidget {
   const InfoItems({
-    super.key, required this.title, required this.hint,
+    super.key,
+    required this.title,
+    required this.hint,
   });
 
   final String title;
   final String hint;
+
   @override
   Widget build(BuildContext context) {
     return Column(
