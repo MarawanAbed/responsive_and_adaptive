@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 TextStyle kTextStyle16w00(BuildContext context) {
@@ -75,11 +76,18 @@ double getResponsiveFontSize(double fontSize, context) {
 }
 
 double getScaleFactor(context) {
+  //or we can
+  var dispatcher=PlatformDispatcher.instance;
+  //physical width/device pixel ratio = width in logical pixels
+  var physicalWidth = dispatcher.views.first.physicalSize.width;
+  var devicePixelRatio = dispatcher.views.first.devicePixelRatio;
+  var newWidth = physicalWidth / devicePixelRatio;
   double width = MediaQuery.of(context).size.width;
-  if (width < 600) {
-    return width / 400;
-  } else if (width < 900) {
-    return width / 700;
+  //this point change depend on the break point you put in your layout
+  if (width < 600) {//tablet
+    return width / 550;
+  } else if (width < 1300) {//desktop
+    return width / 1000;
   } else {
     return width / 1000;
   }
